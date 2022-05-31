@@ -9,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Build Android App
-      uses: sparkfabrik/android-build-action@v1.0.0
+      - name: React Native Android Build APK
+        uses: realabbas/Github-Actions-React-Native@v1.1.2
+
 
