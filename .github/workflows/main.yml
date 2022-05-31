@@ -9,8 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Build & Publish Debug APK
-        uses: ShaunLWM/action-release-debugapk@0.0.7
+     - name: Flutter Runner
+       uses: jddeep/Flutter-Runner@1.2.0
+
 
 
 
