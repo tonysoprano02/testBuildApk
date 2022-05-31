@@ -9,8 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-     - name: Flutter Runner
-       uses: jddeep/Flutter-Runner@1.2.0
+     - name: automated-build-android-app-with-github-action
+       uses: amirisback/automated-build-android-app-with-github-action@2.0.1
+
 
 
 
