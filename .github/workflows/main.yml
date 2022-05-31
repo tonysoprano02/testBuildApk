@@ -9,6 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Universal APK Builder
-      uses: skywall/universal-apk-builder@v1.0.1
+    - name: Build Android App
+      uses: sparkfabrik/android-build-action@v1.0.0
 
