@@ -9,7 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: React Native Android Build APK
-        uses: realabbas/Github-Actions-React-Native@v1.1.2
+      - name: Build & Publish Debug APK
+        uses: ShaunLWM/action-release-debugapk@0.0.7
+
 
 
