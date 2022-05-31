@@ -22,7 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-       steps:
-        - name: automated-build-android-app-with-github-action
-        - uses: amirisback/automated-build-android-app-with-github-action@2.0.1
+      - name: automated-build-android-app-with-github-action
+      - uses: amirisback/automated-build-android-app-with-github-action@2.0.1
+
 
