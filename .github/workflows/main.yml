@@ -14,6 +14,11 @@ jobs:
         uses: actions/setup-java@v1       
         with:         
            java-version: 1.8
+      - name: Use oxr463/setup-cordova
+        uses: oxr463/setup-cordova@0.0.3
+        with:
+          exec: |
+            cordova platform prepare android
       - name: Build debug APK
         run: bash ./gradlew assembleDebug --stacktrace
       - name: Upload APK
