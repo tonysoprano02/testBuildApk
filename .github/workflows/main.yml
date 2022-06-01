@@ -17,14 +17,10 @@ jobs:
       - name: checkversion
         run: |
          npm install
-      - name: installCordova
-        run: |
-         npm install cordova
-      - name: installIonic
-        run: |
-         npm install ionic
+      - name: Use coturiv/setup-ionic
+        uses: coturiv/setup-ionic@v1
+        with:
+          java-version: 8
       - name: Build
         run: |
           ionic cordova platform add android
-         
-       
