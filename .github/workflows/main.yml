@@ -16,7 +16,7 @@ jobs:
            java-version: 1.8
       - name: checkversion
         run: |
-         npm --version
+         npm install
       - name: Use coturiv/setup-ionic
         uses: coturiv/setup-ionic@v1
         with:
