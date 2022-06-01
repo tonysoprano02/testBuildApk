@@ -9,8 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-     - name: Trigger Mobile Builds with Appflow
-       uses: ionic-team/appflow-build@v1
+     - name: Android Build
+       uses: vgaidarji/android-github-actions-build@v1.0.1
+
 
 
 
