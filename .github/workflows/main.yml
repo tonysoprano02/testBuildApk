@@ -25,6 +25,9 @@ jobs:
         uses: coturiv/setup-ionic@v1
         with:
           cordova-version: 8
+      - name: Install Res
+        run: |
+         npm i cordova-res
       - name: Resources
         run: |
          ionic cordova resources android
