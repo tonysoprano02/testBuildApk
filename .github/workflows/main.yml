@@ -26,7 +26,7 @@ jobs:
         with:
           cordova-version: 8
       - name: Prepare
-        uses: |
+        run: |
          ionic cordova prepare android --no-build
       - name: Build
         run: |
