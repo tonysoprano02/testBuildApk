@@ -14,5 +14,4 @@ jobs:
        with:
          exec: |
            cordova platform add android && \
-           cordova build --no-telemetry && \
-           cp "$(find . -name '*.apk')" .
+           cordova build android
