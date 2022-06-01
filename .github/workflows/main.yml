@@ -25,6 +25,9 @@ jobs:
         uses: coturiv/setup-ionic@v1
         with:
           cordova-version: 8
+      - name: Resources
+        run: |
+         ionic cordova resources android
       - name: Prepare
         run: |
          ionic cordova prepare android --no-build
