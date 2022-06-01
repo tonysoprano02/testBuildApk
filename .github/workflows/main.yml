@@ -27,4 +27,4 @@ jobs:
           cordova-version: 8
       - name: Build
         run: |
-          ionic cordova platform add android@10.0.0
+          ionic cordova platform add android@latest
