@@ -25,6 +25,9 @@ jobs:
         uses: coturiv/setup-ionic@v1
         with:
           cordova-version: 8
+      - name: Prepare
+        uses: |
+         ionic cordova prepare android --no-build
       - name: Build
         run: |
           ionic cordova build android --prod
