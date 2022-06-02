@@ -10,14 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1     
-      - name: install npm
-        run: |
-         npm install
+      - name: Use coturiv/setup-ionic
+        uses: coturiv/setup-ionic@v1
+        with:
+          java-version: 8
       - name: Use coturiv/setup-ionic
         uses: coturiv/setup-ionic@v1
         with:
           cordova-version: 8
       - name: Build
         run: |
-          ionic cordova platform add ios
+          ionic cordova build android --prod
+
 
