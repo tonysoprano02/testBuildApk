@@ -4,10 +4,9 @@ on:
  push:
   branches:
    - main
-   
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1     
       - name: Use coturiv/setup-ionic
@@ -18,11 +17,8 @@ jobs:
         uses: coturiv/setup-ionic@v1
         with:
           cordova-version: 8
-      - name: Update
-        run: |
-         npm update
       - name: Build
         run: |
-          ionic cordova build android --prod 
+          ionic cordova build android
 
 
